@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+    <style>
+        body {
+            /* align-items: center; */
+            /* display: flex; */
+            justify-content: center;
+            background-color: rgb(238, 238, 238);
+        }
+
+        fieldset {
+            width: 94%;
+            min-height: 1%;
+            display: flex;
+            position: relative;
+            background-color: #fff;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 5px 15px 5px 5px;
+            margin: 0 0 5px 32px;
+            overflow: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: blue;
+            font-weight: bold;
+        }
+
+        #send_to_email {
+            color: green;
+            accent-color: green;
+        }
+
+        #send_to_mobile_phone {
+            color: green;
+            accent-color: green;
+        }
+
+        .card {
+            width: 100%;
+            position: relative;
+            display: flex;
+            padding-left: 350px;
+            flex-direction: row;
+            min-height: 400px;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+            overflow: auto;
+        }
+
+        div {
+            margin-bottom: 5px;
+        }
+
+        .deskripsi {
+            /* display:flex; */
+            text-align: start;
+        }
+
+        textarea {
+            width: 200px;
+            height: 100px;
+        }
+
+        .file {
+            padding: 150px 40px 0 10px;
+        }
+
+        .card-body {
+            flex: 1 1 auto;
+            padding: 1rem 1rem
+        }
+
+        .tab1 {
+            display: inline-block;
+            margin-left: 120px;
+        }
+
+        .tab2 {
+            display: inline-block;
+            margin-left: 104px;
+        }
+
+        .tab3 {
+            display: inline-block;
+            margin-left: 74px;
+        }
+
+        .tab4 {
+            display: inline-block;
+            margin-left: 147px;
+        }
+
+        .tab5 {
+            display: inline-block;
+            margin-left: 82px;
+        }
+
+        .tab6 {
+            display: inline-block;
+            margin-left: 109px;
+        }
+
+        .tab7 {
+            display: inline-block;
+            margin-left: 190px;
+        }
+
+        .tab8 {
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        .tab9 {
+            display: inline-block;
+            margin-left: 93px;
+        }
+
+        .submit>input {
+            background-color: green;
+            color: white;
+            padding: 0.5rem;
+            font-family: sans-serif;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            margin-top: 1rem;
+            border: none;
+        }
+
+        span {
+            font-weight: bolder;
+        }
+
+        .upload {
+            background-color: indigo;
+            color: white;
+            padding: 0.5rem;
+            font-family: sans-serif;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <a href="">Home</a>
+        |
+        <a href="">Generate Link</a>
+        |
+        <a href="">Transaction History</a>
+        |
+        <a href="">Policy</a>
+        |
+        <a href="">Logout</a>
+    </fieldset>
+    <form action="tugas_form2.html" method="get">
+        <div class="card">
+            <div class="file">
+                <input type="file" id="upload" hidden>
+                <label class="upload" for="upload">Upload Picture</label>
+            </div>
+            <div class="card-body">
+                <div>
+                    <label for="title">Title Here</label>
+                    <span class="tab1">:</span>
+                    <input type="text" name="title" id="title" placeholder="Insert Title" />
+                </div>
+                <div>
+                    <label class="deskripsi" for="descriptions">Descriptions</label>
+                    <span class="tab2">:</span>
+                    <textarea name="descriptions" id="descriptions" placeholder="Year : 
+                
+Model : 
+
+Condition :"></textarea>
+                </div>
+                <div>
+                    <label for="account-number">Account Number</label>
+                    <span class="tab3">:</span>
+                    <input type="number" name="account-number" id="account-number"
+                        placeholder="Insert Account Number"></input>
+                </div>
+                <div>
+                    <label for="bank">Bank</label>
+                    <span class="tab4">:</span>
+                    <select name="bank" id="bank">
+                        <option value="HSBC" selected>HSBC</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BNI">BNI</option>
+                        <option value="BRI">BRI</option>
+                        <option value="MayBank">MayBank</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="account-holder">Account Holder</label>
+                    <span class="tab5">:</span>
+                    <input type="text" name="account-holder" id="account-holder"
+                        placeholder="Insert Account Holder Here"></input>
+                </div>
+                <div>
+                    <label for="transaction">Transaction</label>
+                    <span class="tab6">:</span>
+                    <input type="number" name="transaction" id="transaction" min="1"></input><br>
+                    <p class="tab7">* if the transaction is for 3 person, choose 3 from input above this text </p><br>
+                    <input class="tab7" type="checkbox" name="send_to_mobile_phone" id="send_to_mobile_phone"
+                        value="Send to Mobile Phone">
+                    <label class="send" for="send_to_mobile_phone" id="send_to_mobile_phone">Send to Mobile
+                        Phone</label><br>
+                    <input class="tab7" type="checkbox" name="send_to_email" id="send_to_email" value="Send to Email">
+                    <label class="send" for="send_to_email" id="send_to_email">Send to Email</label>
+                </div>
+                <div>
+                    <label for="send-to-mobile-phone">Send to Mobile Phone</label>
+                    <span class="tab8">:</span>
+                    <input type="text" name="send-to-mobile-phone" id="send-to-mobile-phone"
+                        placeholder="Insert Phone Number Here"></input>
+                </div>
+                <div>
+                    <label for="send-to-email">Send to Email</label>
+                    <span class="tab9">:</span>
+                    <input type="text" name="send-to-email" id="send-to-email" placeholder="Insert Email Here"></input>
+                </div>
+                <div class="submit">
+                    <input class="tab7" type="submit" name="submit-btn" id="submit-btn" value="Generate Link">
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

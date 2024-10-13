@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Pizza</title>
+  </head>
+  <body>
+    <div>
+      <!-- Heading -->
+      <h1>Black Goose Bistro | Pizza-on-Demand</h1>
+      <!-- Descriptions -->
+      <p>
+        Our 12" wood-fired pizzas are available for delivery. Build your custom
+        pizza and we'll deliver it within an hour
+      </p>
+      <!-- Form Your Information -->
+      <form action="http://blackgoosebistro.com/pizza.php" method="post">
+        <fieldset>
+          <legend>Your Information</legend>
+          <div>
+            <label for="name">Name :</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div>
+            <label for="address">Address :</label>
+            <input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="Address"
+              required
+            />
+          </div>
+          <div>
+            <label for="phone">Phone Number :</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Phone Number"
+              minlength="11"
+              maxlength="15"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email :</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div>
+            <label for="delivery">Delivery Instruction :</label>
+            <textarea
+              name="delivery"
+              id="delivery"
+              maxlength="400"
+              placeholder="No more than 400 character long"
+            ></textarea>
+          </div>
+        </fieldset>
+        <!-- Form Pizza -->
+        <b><p>Design Your Dream Pizza :</p></b>
+        <p>Pizza Specs</p>
+        <fieldset>
+          <legend>Crust (Choose One) :</legend>
+          <ul>
+            <li>
+              <input
+                type="radio"
+                name="crust"
+                value="Classic White"
+                id="crust1"
+              />Classic White
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="crust"
+                value="Multigrain"
+                id="crust2"
+              />Multigrain
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="crust"
+                value="Cheese Stuffed Crust"
+                id="crust3"
+              />Cheese Stuffed Crust
+            </li>
+            <li>
+              <input
+                type="radio"
+                name="crust"
+                value="Gluten Free"
+                id="crust4"
+              />Gluten Free
+            </li>
+          </ul>
+          <p>Toppings (Choose as many as you want) :</p>
+          <input
+            type="checkbox"
+            name="topping1"
+            value="Red Sauce"
+            id="topping1"
+          />
+          <label for="topping1">Red Sauce</label><br />
+          <input
+            type="checkbox"
+            name="topping2"
+            value="White Sauce"
+            id="topping2"
+          />
+          <label for="topping2">White Sauce</label><br />
+          <input
+            type="checkbox"
+            name="topping3"
+            value="Mozzarella Cheese"
+            id="topping3"
+          />
+          <label for="topping3">Mozzarella Cheese</label><br />
+          <input
+            type="checkbox"
+            name="topping4"
+            value="Pepperoni"
+            id="topping4"
+          />
+          <label for="topping4">Pepperoni</label><br />
+          <input
+            type="checkbox"
+            name="topping5"
+            value="Mushrooms"
+            id="topping5"
+          />
+          <label for="topping5">Mushrooms</label><br />
+          <input
+            type="checkbox"
+            name="topping6"
+            value="Peppers"
+            id="topping6"
+          />
+          <label for="topping6">Peppers</label><br />
+          <input
+            type="checkbox"
+            name="topping7"
+            value="Anchovies"
+            id="topping7"
+          />
+          <label for="topping7">Anchovies</label>
+        </fieldset>
+        <div>
+          <p>Number</p>
+          <label for="quantity">How many pizzas :</label>
+          <!-- <input type="number" name="quantity" id="quantity" min="1"> -->
+          <select name="quantity" id="quantity">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </div>
+
+        <input
+          type="submit"
+          name="submit-btn"
+          id="submit-btn"
+          value="Bring Me Pizza"
+        />
+        <input type="reset" name="reset-btn" id="reset-btn" value="Reset" />
+      </form>
+    </div>
+  </body>
+</html>

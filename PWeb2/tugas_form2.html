@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+    <style>
+        body {
+            /* align-items: center; */
+            /* display: flex; */
+            justify-content: center;
+            background-color: rgb(238, 238, 238);
+        }
+
+        fieldset {
+            width: 94%;
+            min-height: 1%;
+            display: flex;
+            position: relative;
+            background-color: #fff;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 5px 15px 5px 5px;
+            margin: 0 0 5px 32px;
+            overflow: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: blue;
+            font-weight: bold;
+        }
+
+        #send_to_email {
+            color: green;
+            accent-color: green;
+        }
+
+        #send_to_mobile_phone {
+            color: green;
+            accent-color: green;
+        }
+
+        .card {
+            width: 91%;
+            position: relative;
+            display: flex;
+            padding-left: 120px;
+            flex-direction: row;
+            min-height: 400px;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+            overflow: auto;
+        }
+
+        div {
+            margin-bottom: 5px;
+        }
+
+        .deskripsi {
+            /* display:flex; */
+            text-align: start;
+        }
+
+        textarea {
+            width: 200px;
+            height: 100px;
+        }
+
+        .file {
+            padding: 60px 40px 0 10px;
+        }
+
+        .card-body {
+            flex: 1 1 auto;
+            padding: 1rem 1rem
+        }
+
+        .tab1 {
+            display: inline-block;
+            margin-left: 120px;
+        }
+
+        .tab2 {
+            display: inline-block;
+            margin-left: 104px;
+        }
+
+        .tab3 {
+            display: inline-block;
+            margin-left: 97px;
+        }
+
+        .tab4 {
+            display: inline-block;
+            margin-left: 93px;
+        }
+
+        .tab5 {
+            display: inline-block;
+            margin-left: 82px;
+        }
+
+        .tab6 {
+            display: inline-block;
+            margin-left: 74px;
+        }
+
+        .tab7 {
+            display: inline-block;
+            margin-left: 190px;
+        }
+
+        .tab8 {
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        .tab9 {
+            display: inline-block;
+            margin-left: 93px;
+        }
+
+        .tab10 {
+            display: inline-block;
+            margin-left: 136px;
+        }
+
+        .submit>input {
+            background-color: green;
+            color: white;
+            padding: 0.5rem;
+            font-family: sans-serif;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            margin-top: 1rem;
+            border: none;
+        }
+
+        span {
+            font-weight: bolder;
+        }
+
+        .upload {
+            background-color: indigo;
+            color: white;
+            padding: 0.5rem;
+            font-family: sans-serif;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <a href="tugas_form.html">Home</a>
+        |
+        <a href="tugas_form.html">Generate Link</a>
+        |
+        <a href="">Transaction History</a>
+        |
+        <a href="">Policy</a>
+        |
+        <a href="">Logout</a>
+    </fieldset>
+    <div class="card">
+        <div class="file">
+            <img src="../PWeb1/Pictures/Until Then.jpeg" width="500" alt="">
+            <!-- <input type="file" id="upload" hidden>
+            <label class="upload" for="upload">Upload Picture</label> -->
+        </div>
+        <div class="card-body">
+            <div>
+                <label for="title">Title Here</label>
+                <span class="tab1">:</span>
+                <label for="">MacBook Air £800</label>
+                <!-- <input type="text" name="title" id="title" placeholder="Insert Title" /> -->
+            </div>
+            <div>
+                <label class="deskripsi" for="descriptions">Descriptions</label>
+                <span class="tab2">:</span>
+                <label for="">Year : 2009</label><br>
+                <span class="tab7"></span>
+                <label for="">Model :</label><br>
+                <span class="tab7"></span>
+                <label for="">Condition : Mint</label>
+                <!-- <textarea name="descriptions" id="descriptions" placeholder="Year :
+                
+                Model : "></textarea> -->
+            </div>
+            <div>
+                <label for="total-amount">Total Amount</label>
+                <span class="tab3">:</span>
+                <label for="">£800</label>
+                <!-- <input type="number" name="account-number" id="account-number"
+                    placeholder="Insert Account Number"></input> -->
+            </div>
+            <div>
+                <label for="pay-to">Pay To</label>
+                <span class="tab10">:</span>
+                <label for="">123-456-789-0</label>
+                <!-- <input type="number" name="account-number" id="account-number"
+                    placeholder="Insert Account Number"></input> -->
+            </div>
+            <div>
+                <label for="payment-type">Payment Type</label>
+                <span class="tab4">:</span>
+                <select name="payment-type" id="payment-type">
+                    <option value="Visa Debit" selected>Visa Debit</option>
+                    <option value="Visa Credit">Visa Credit</option>
+                </select>
+            </div>
+            <div>
+                <label for="account-holder">Account Holder</label>
+                <span class="tab5">:</span>
+                <input type="text" name="account-holder" id="account-holder"
+                    placeholder="Insert Name Here"></input>
+            </div>
+            <div>
+                <label for="account-number">Account Number</label>
+                <span class="tab6">:</span>
+                <input type="number" name="account-number" id="account-number" placeholder="123-456-789-0" min="1"></input><br>
+                <input class="tab7" type="checkbox" name="send_to_mobile_phone" id="send_to_mobile_phone"
+                    value="Send to Mobile Phone">
+                <label class="send" for="send_to_mobile_phone" id="send_to_mobile_phone">Send to Mobile
+                    Phone</label><br>
+                <input class="tab7" type="checkbox" name="send_to_email" id="send_to_email" value="Send to Email">
+                <label class="send" for="send_to_email" id="send_to_email">Send to Email</label>
+            </div>
+            <div>
+                <label for="send-to-mobile-phone">Send to Mobile Phone</label>
+                <span class="tab8">:</span>
+                <input type="text" name="send-to-mobile-phone" id="send-to-mobile-phone"
+                    placeholder="1234567890, 1234567891"></input>
+            </div>
+            <div>
+                <label for="send-to-email">Send to Email</label>
+                <span class="tab9">:</span>
+                <input type="text" name="send-to-email" id="send-to-email" placeholder="mfmm2g13@soton.ac.uk, fys_06@yahoo.com"></input>
+            </div>
+            <div class="submit">
+                <input class="tab7" type="submit" name="submit-btn" id="submit-btn" value="Pay using QuidLink">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
