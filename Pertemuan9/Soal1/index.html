@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luas dan Keliling Lingkaran</title>
+</head>
+<body>
+    <h1>Menghitung Luas dan Keliling Lingkaran</h1>
+
+    <label for="jari">Masukan Jari-Jari</label>
+    <input type="number" id="jari">
+    <button onclick="hitung()">Hitung</button>
+
+    <!-- Hasil Perhitugan Luas -->
+    <p>Luas Lingkaran : <span id="luas">0</span></p>
+
+    <!-- Hasil Perhitungan Keliling -->
+    <p>Keliling Lingkaran : <span id="keliling">0</span></p>
+
+    <button onclick="reset()">Reset</button>
+
+    <!-- JavaScript -->
+    <script>
+        function hitung(){
+            let jari = document.getElementById("jari").value;
+            // const pi = 3.14  // Konstanta = Tidak bisa dirubah
+
+            //Menghitung Luas
+            let luas = Math.PI * (jari**2);
+
+            //Menghitung Keliling
+            let keliling = 2 * Math.PI * jari;
+
+            document.getElementById('luas').innerHTML = luas.toFixed(2);
+            document.getElementById('keliling').innerHTML = keliling.toFixed(2);
+        }
+
+        //Reset
+        function reset(){
+            document.getElementById('luas').innerHTML = 0
+            document.getElementById('keliling').innerHTML = 0
+        }
+    </script>
+</body>
+</html>

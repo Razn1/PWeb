@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/i.png'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-in">
+            <form style="align-items: start;" action="index.html">
+                <h1 style="text-align: center; width: 100%; margin-bottom: 20px;">Pesan</h1>
+                <div class="form-group">
+                    <label for="">Varian Rasa Susu</label>
+                    <select style="width: 213%;" name="level" class="form-control" value="" id="">
+                        <option value="">-Pilih Rasa Susu-</option>
+                        <option style="color: black;" value="Plain">Plain</option>
+                        <option style="background-color: lightpink; color: black;" value="Strawberry">Strawberry</option>
+                        <option style="background-color: chocolate; color: white;" value="Chocolate">Chocolate</option>
+                        <option style="background-color: yellow; color: black;" value="Banana">Banana</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Ukuran Susu</label>
+                    <select style="width: 190%;" name="level" class="form-control" value="" id="">
+                        <option value="">-Pilih Ukuran Susu-</option>
+                        <option style="color: black;" value="Kecil">Kecil</option>
+                        <option style="color: black;" value="Cup">Cup</option>
+                        <option style="color: black;" value="Sedang">Sedang</option>
+                        <option style="color: black;" value="Besar">Besar</option>
+                    </select>
+                </div>
+                <label for="">Jumlah Susu</label>
+                <input style="margin-bottom: 17px; border: 1px solid #d2d6da;" placeholder="Masukan Jumlah yang diinginkan" type="number">
+                <label for="">Alamat Pengiriman</label>
+                <input style="border: 1px solid #d2d6da;" placeholder="Masukan Alamat Tujuan" type="text">
+                <div style="width: 100%;">
+                    <button style="margin-left: 78px; margin-right: 78px; margin-bottom: 10px;" class="btn mt-3">Pesan</button>
+                    <br>
+                    <a style="margin-left: 130px; margin-right: 130px;" href="index.html" class="hidden" id="login">Back</a>
+                </div>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-right">
+                    <h1 style="text-align: center; justify-content: center;">Hello!</h1>
+                    <p>Insert Your Order Here</p>
+                    <!-- <label for=""> Daftar Harga? Klik 
+                    <a style="margin-left: 130px; margin-right: 130px; color: white; text-decoration: underline;" href="index.html" class="hidden" id="login">Disini</a>
+                    </label> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

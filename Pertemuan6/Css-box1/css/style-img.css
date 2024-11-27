@@ -1,0 +1,37 @@
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid black;
+    float:right;
+}
+.box-1 {
+    background-image: url("../../Pertemuan5/Tugas5.1/images/burung1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box-2 {
+    background-image: url("../../Pertemuan5/Tugas5.1/images/burung2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box-3 {
+    background-image: url("../../Pertemuan5/Tugas5.1/images/burung3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box-4 {
+    background-image: url("../../Pertemuan5/Tugas5.1/images/burung4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+img {
+    height: 150px;
+    margin: 10px;
+}
