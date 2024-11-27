@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Mata Uang</title>
+</head>
+<body>
+    <!-- 
+    Prosedur :
+    1. Input Kolom Rupiah/Dollar
+    2. Tag p Menampung Hasil
+    3. Deklarasi Variable Dollar/Rupiah
+    4. Hitung Pembagian/Perkalian Dollar->Rupiah / Rupiah->Dollar
+    -->
+
+    <h1>Konversi Rupiah ke Dollar</h1>
+    <label for="rupiah">Masukan Jumlah Rupiah</label>
+    <input type="number" id="rp" onkeyup="konversiRp()">
+
+    <p>Hasil Konversi ke Dollar : <span id="hasilDollar">0</span></p>
+
+    <h1>Konversi Dollar ke Rupiah</h1>
+    <label for="dollar">Masukan Jumlah Dollar</label>
+    <input type="number" id="dollar" onkeyup="konversiDollar()">
+
+    <p>Hasil Konversi ke Rupiah : <span id="hasilRupiah">0</span></p>
+
+    <script>
+        function konversiRp(){
+            let rp = document.getElementById('rp').value;
+            let hasil1 = rp / 14650
+
+            document.getElementById('hasilDollar').innerHTML = "$" + hasil1.toFixed(2);
+        }
+        function konversiDollar(){
+            let dollar = document.getElementById('dollar').value;
+            let hasil2 = dollar * 14650
+
+            document.getElementById('hasilRupiah').innerHTML = "Rp. " + hasil2;
+        }
+    </script>
+</body>
+</html>
