@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function otentikasi(){
+            const admin = "admin";
+            const passad = "123";
+
+            let user = document.getElementsById('username').value;
+            let pass = document.getElementsById('pass').value;
+
+            if(user == admin && pass == passad) {
+                alert('Sukses Login');
+                return true;
+            }else{
+                alert('Gagal Login');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="login.php" method="post">
+        Username : <input type="text" name="username" id="username">
+        <br>
+        Password : <input type="password" name="pass" id="pass">
+        <br>
+        <input type="submit" value="Login" onclick="otentikasi()">
+    </form>
+</body>
+</html>

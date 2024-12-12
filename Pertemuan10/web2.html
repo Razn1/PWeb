@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let mhs = {
+            nama : 'Saya',
+            umur : 18,
+            prodi : {
+                kode : 'TI',
+                nama : 'Teknik Informatika'
+            },
+            ipk : 3.8,
+            grade : function(){
+                if (this.ipk >= 3.5)
+                    return "Cumlaude"
+                else
+                    return "Tidak Cumlaude" 
+            }
+        }
+        function cetak(){
+            let area_nf = document.getElementById('nf');
+            area_nf.innerHTML = 'Nama Mahasiswa : ' + mhs.nama;
+            area_nf.innerHTML = area_nf.innerHTML + '<br>Usia : ' + mhs.umur;
+            area_nf.innerHTML = area_nf.innerHTML + '<br>Prodi : ' + mhs.prodi.nama
+            area_nf.innerHTML = area_nf.innerHTML + '<br>IPK : ' + mhs.ipk
+            area_nf.innerHTML = area_nf.innerHTML + '<br>Gelar : ' + mhs.grade()
+        }
+    </script>
+</head>
+<body onload="cetak()">
+    <div id="nf"></div>
+</body>
+</html>

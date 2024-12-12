@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Validator Login JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Form Validator</h1>
+    <form id="form">
+        <div class="form-group">
+            <label for="nama">Nama Pelanggan : </label>
+            <input type="text" id="nama">
+            <div class="error" id="errNama"></div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email : </label>
+            <input type="email" id="email">
+            <div class="error" id="errMail"></div>
+        </div>
+        <div class="form-group">
+            <label for="jam">Jam Keberangkatan : </label>
+            <input type="time" id="jam">
+            <div class="error" id="errJam"></div>
+        </div>
+        <div class="form-group">
+            <label for="tujuan">Tujuan Keberangkatan : </label>
+            <input type="text" id="tujuan">
+            <div class="error" id="errTujuan"></div>
+        </div>
+        <div class="form-group">
+            <label for="jumlah">Jumlah Tiket : </label>
+            <input type="number" id="tiket">
+            <div class="error" id="errTiket"></div>
+        </div>
+        <button type="button" onclick="Validasi()">Pesan Sekarang</button>
+    </form>
+    <div class="success" id="success" style="display: none;"></div>
+    <script src="script.js"></script>
+</body>
+</html>

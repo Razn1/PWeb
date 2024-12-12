@@ -1,6 +1,7 @@
-body{
+body {
     background-color: rgb(207, 207, 207);
 }
+
 header .nav-1 {
     display: flex;
     justify-content: space-between;
@@ -9,30 +10,32 @@ header .nav-1 {
     padding: 10px;
     margin: -10px;
 }
+
 .img-item {
     width: 50px;
 }
-.nav-1 ul{
+
+.nav-1 ul {
     display: flex;
     list-style: none;
 
-        & li{
-            margin-right: 5px;
+    & li {
+        margin-right: 5px;
 
-                & a{
-                    text-decoration: none;
-                    color: white;
-                }
+        & a {
+            text-decoration: none;
+            color: white;
         }
+    }
 }
 
-.menu{
+.menu {
     display: flex;
     list-style: none;
     padding-right: 50px;
 }
 
-.nav-2{
+.nav-2 {
     display: flex;
     justify-content: space-between;
     padding: 5px;
@@ -42,36 +45,36 @@ header .nav-1 {
     font-weight: bold;
 
 
-        & .sosmed a {
-            text-decoration: none;
-            padding-right: 10px;
-        }
+    & .sosmed a {
+        text-decoration: none;
+        padding-right: 10px;
+    }
 }
 
-#banner{
+#banner {
     margin: -10px;
 }
 
-.card{
+.card {
     padding: 15px;
     background-color: white;
     display: flex;
     justify-content: space-around;
 
-        & .section-1{
-            margin-right: 5px;
-            
-                & .content-1{
-                    background-image: url("https://via.placeholder.com/400x300");
-                    background-size: cover;
-                    width: 200px;
+    & .section-1 {
+        margin-right: 5px;
 
-                    & span{
-                        background-color: red;
-                        color: white;
-                        padding: 5px;
-                        border-radius: 25px;
-                    }
-                }
+        & .content-1 {
+            background-image: url("https://via.placeholder.com/400x300");
+            background-size: cover;
+            width: 200px;
+
+            & span {
+                background-color: red;
+                color: white;
+                padding: 5px;
+                border-radius: 25px;
+            }
         }
+    }
 }

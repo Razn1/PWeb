@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="src/js/basic.js"></script>
-    <title>Document</title>
+    <title>JS 2</title>
+    <script src="https://unpkg.com/@develoka/angka-terbilang-js/index.min.js"></script>
+    <script>
+        function changeColor(){
+            let color = document.querySelector("select").value;
+            document.body.style.backgroundColor = color;
+            // let color = document.getElementById("color").value;
+            console.log("Anda pilih warna : " + color)
+            // document.body.style.backgroundColor = color;
+        }
+        function kursRp(){
+            let nilaiDollar = 15925;
+            let dollar = document.getElementById("dollar").value;
+            let rupiah = parseFloat(dollar) * nilaiDollar;
+            document.getElementById("rupiah").value = rupiah;
+            let nilai = document.getElementById("terbilang");
+            nilai.innerHTML = angkaTerbilang(rupiah);
+        }
+    </script>
 </head>
 <body>
-    
+    <form action="">
+        Pilih Warna :
+        <select name="color" id="color" onchange="changeColor()">
+            <option value="red">Merah</option>
+            <option value="blue">Biru</option>
+            <option value="green">Hijau</option>
+            <option value="yellow">Kuning</option>
+            <option value="pink">Merah Muda</option>
+        </select>
+        <hr>
+        Nilai Dollar : 
+        <input type="text" id="dollar" onkeyup="kursRp()">
+        Nilai Rupiah :
+        <input type="text" id="rupiah">
+        <br>
+        <span id="terbilang" onkeyup="angkaTerbilang()"></span>
+    </form>
 </body>
 </html>
