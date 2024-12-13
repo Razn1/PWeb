@@ -41,7 +41,7 @@ function Validasi() {
     const pesanBerhasil = document.getElementById('success');
     if (Valid) {
         pesanBerhasil.style.display = 'block';
-        pesanBerhasil.innerHTML = `<strong>Data TerValidasi!</strong><br>
+        pesanBerhasil.innerHTML = `<strong>Data TerValidasi!</strong><br><br>
             Nama: ${nama}<br>
             Email: ${email}<br>
             Jam Keberangkatan: ${jam}<br>

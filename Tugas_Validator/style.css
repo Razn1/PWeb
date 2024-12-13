@@ -36,5 +36,9 @@ form {
     padding: 10px;
     background-color: #d4edda;
     border: 1px solid #c3e6cb;
-    color: #155724;
+    color: #000;
+}
+
+#success {
+    max-width: 400px;
 }
