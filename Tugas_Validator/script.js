@@ -7,32 +7,32 @@ function Validasi() {
     document.getElementById('errTujuan').textContent = '';
     document.getElementById('errTiket').textContent = '';
 
-    const nama = document.getElementById('nama').value.trim();
+    const nama = document.getElementById('nama').value;
     if (!nama || nama.length > 30) {
         Valid = false;
         document.getElementById('errNama').textContent = 'Nama wajib diisi dan maksimal 30 karakter.';
     }
 
-    const email = document.getElementById('email').value.trim();
+    const email = document.getElementById('email').value;
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!email || !emailPattern.test(email)) {
         Valid = false;
         document.getElementById('errMail').textContent = 'Format email tidak Valid.';
     }
 
-    const jam = document.getElementById('jam').value.trim();
+    const jam = document.getElementById('jam').value;
     if (!jam) {
         Valid = false;
         document.getElementById('errJam').textContent = 'Jam keberangkatan wajib diisi.';
     }
 
-    const tujuan = document.getElementById('tujuan').value.trim();
+    const tujuan = document.getElementById('tujuan').value;
     if (!tujuan) {
         Valid = false;
         document.getElementById('errTujuan').textContent = 'Tujuan keberangkatan wajib diisi.';
     }
 
-    const tiket = document.getElementById('tiket').value.trim();
+    const tiket = document.getElementById('tiket').value;
     if (!tiket || tiket < 1 || tiket > 10) {
         Valid = false;
         document.getElementById('errTiket').textContent = 'Jumlah tiket harus antara 1 dan 10.';
